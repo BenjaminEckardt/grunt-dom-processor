@@ -1,0 +1,32 @@
+{
+  "name": "grunt-dom-processor",
+  "version": "0.1.0-SNAPSHOT",
+  "description": "grunt task for dom-processor",
+  "main": "grunt-dom-processor.js",
+  "repository": {
+    "type": "git",
+    "url": "this"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "keywords": [
+    "grunt",
+    "dom",
+    "html",
+    "processor",
+    "template",
+    "replace"
+  ],
+  "author": "Benjamin Eckardt <Benjamin.Eckardt@gmx.net> (https://github.com/BenjaminEckardt)",
+  "license": "MIT",
+  "dependencies": {
+    "dom-processor": "~0.2.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-jshint": "^0.12.0",
+    "grunt-contrib-nodeunit": "^0.4.1"
+  }
+}
