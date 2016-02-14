@@ -1,24 +1,24 @@
 'use strict';
-const TASK_NAME = 'dom-processor';
-const DomProcessor = require('dom-processor');
+var TASK_NAME = 'dom-processor';
+var DomProcessor = require('dom-processor');
 
 module.exports = function (grunt) {
-  let log = grunt.log;
-  let file = grunt.file;
+  var log = grunt.log;
+  var file = grunt.file;
 
-  let gruntDomProcessor = function () {
+  var gruntDomProcessor = function () {
     grunt.config.requires(TASK_NAME);
 
-    let fileCount = 0;
+    var fileCount = 0;
 
-    let configLoaderPath = this.data.configLoader;
-    let configLoader = require(configLoaderPath);
-    let domProcessor = new DomProcessor(configLoader);
+    var configLoaderPath = this.data.configLoader;
+    var configLoader = require(configLoaderPath);
+    var domProcessor = new DomProcessor(configLoader);
 
     this.files.forEach(function(filePair) {
       filePair.src.forEach(function(srcPath) {
         log.debug('processing file: ' + srcPath);
-        let html = domProcessor.process(grunt.file.read(srcPath), srcPath);
+        var html = domProcessor.process(grunt.file.read(srcPath), srcPath);
 
         log.debug('output; \n' + html);
         file.write(filePair.dest || srcPath, html);
