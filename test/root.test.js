@@ -4,7 +4,8 @@ var path = require('path');
 module.exports = {
   base: function (test) {
     var files = [
-      'base.html'
+      'base.html',
+      'loading.html'
     ];
 
     test.expect(files.length);

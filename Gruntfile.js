@@ -1,5 +1,6 @@
 'use strict';
-var configLoader = require('./test/input/base/config-loader');
+var baseConfigLoader = require('./test/setup/base/config-loader');
+var loadingConfigLoader = require('./test/setup/loading/config-loader');
 
 module.exports = function (grunt) {
   grunt.initConfig({
@@ -30,12 +31,21 @@ module.exports = function (grunt) {
     // test-configurations for dom-processor
     'dom-processor': {
       base: {
-        configLoader: configLoader,
+        configLoader: baseConfigLoader,
         files: [{
           src: ['**/*.html'],
           dest: 'tmp',
           expand: true,
-          cwd: 'test/input/base'
+          cwd: 'test/setup/base'
+        }]
+      },
+      loading: {
+        configLoader: loadingConfigLoader,
+        files: [{
+          src: ['**/*.html'],
+          dest: 'tmp',
+          expand: true,
+          cwd: 'test/setup/loading'
         }]
       }
     },
