@@ -1,6 +1,6 @@
 {
   "name": "grunt-dom-processor",
-  "version": "0.3.0",
+  "version": "0.4.0-SNAPSHOT",
   "description": "grunt task for dom-processor",
   "main": "grunt-dom-processor.js",
   "repository": {
