@@ -11,9 +11,7 @@ module.exports = function (grunt) {
 
     var fileCount = 0;
 
-    var configLoaderPath = this.data.configLoader;
-    var configLoader = require(configLoaderPath);
-    var domProcessor = new DomProcessor(configLoader);
+    var domProcessor = new DomProcessor(this.data.configLoader);
 
     this.files.forEach(function(filePair) {
       filePair.src.forEach(function(srcPath) {

@@ -1,4 +1,6 @@
 'use strict';
+var configLoader = require('./test/input/base/config-loader');
+
 module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -28,7 +30,7 @@ module.exports = function (grunt) {
     // test-configurations for dom-processor
     'dom-processor': {
       base: {
-        configLoader: __dirname + '/test/input/base/config-loader',
+        configLoader: configLoader,
         files: [{
           src: ['**/*.html'],
           dest: 'tmp',
