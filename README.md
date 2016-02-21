@@ -21,6 +21,7 @@ Simple example for processing all `html`-files in `src`-folder and writing resul
   }
 }
 ```
+For the usage of `configLoader` see [this](https://github.com/BenjaminEckardt/dom-processor#config-loader)
 
 ## License
 MIT © [Benjamin Eckardt](https://github.com/BenjaminEckardt)
