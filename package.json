@@ -21,7 +21,7 @@
   "author": "Benjamin Eckardt <Benjamin.Eckardt@gmx.net> (https://github.com/BenjaminEckardt)",
   "license": "MIT",
   "dependencies": {
-    "dom-processor": "~0.2.0"
+    "dom-processor": "^0.3.0"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
